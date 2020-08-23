@@ -1,7 +1,6 @@
 package com.haan.myblog.controller;
 
 import com.haan.myblog.domin.dto.ArticleDto;
-import com.haan.myblog.domin.entity.Article;
 import com.haan.myblog.service.ArticleService;
 import org.springframework.web.bind.annotation.*;
 

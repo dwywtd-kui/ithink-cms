@@ -1,7 +1,7 @@
 spring:
   datasource:
     driver-class-name: org.postgresql.Driver
-    url: jdbc:postgresql://localhost:5432/myblog?schema=pulic
+    url: jdbc:postgresql://180.76.173.200:5432/myblog?schema=pulic
     username: postgres
     password: aaaaaa
   jpa:

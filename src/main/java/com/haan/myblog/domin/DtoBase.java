@@ -6,6 +6,6 @@ import lombok.Data;
  * @author Lkhan
  */
 @Data
-public abstract class DtoBase {
-    private Long id;
+public abstract class DtoBase<Tkey> {
+    private Tkey id;
 }

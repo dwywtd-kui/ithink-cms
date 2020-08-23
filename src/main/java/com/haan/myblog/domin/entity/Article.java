@@ -5,10 +5,15 @@ import lombok.Data;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.Table;
 
+/**
+ * @author hanliukui
+ */
 @Entity
 @Data
-public class Article extends EntityBase {
+@Table(name = "article")
+public class Article extends EntityBase<Long> {
 
     /**标题*/
     private String title;
