@@ -39,4 +39,6 @@ public class TreeEntityDto<T,Tkey> extends DtoBase<Tkey> {
      * 排序顺序
      */
     protected Integer sortOrder;
+
+    private Tkey storeId;
 }

@@ -27,16 +27,16 @@ public class MenuItemServiceImpl extends TreeAppService<MenuItemRepository, Menu
 
     @Override
     protected Class<MenuItem> getEntityType() {
-        return null;
+        return MenuItem.class;
     }
 
     @Override
     protected Class<MenuItemDto> getDtoType() {
-        return null;
+        return MenuItemDto.class;
     }
 
     @Override
     protected MenuItem referOtherAttributes(MenuItem entity, MenuItem other) {
-        return null;
+        return other;
     }
 }

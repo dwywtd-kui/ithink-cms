@@ -17,4 +17,5 @@ import javax.persistence.Table;
 @Data
 public class MenuItem extends TreeEntityBase<MenuItem,Long> {
 
+    private String name;
 }
