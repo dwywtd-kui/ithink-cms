@@ -181,12 +181,12 @@ extends CrudAppServiceBase<TRepository,TEntityBase,TEntityDto,TKey> {
 
     /**获取库下的所有的节点，以列表形式返回*/
     public List<TEntityDto> findByStoreId(TKey id){
-        List<TEntityBase> tEntityBaseList = repository.findAllByStoreId(id);
+        List<TEntityBase> tEntityBaseList = repository.findAllByStoreIdOrderBySortOrderAsc(id);
         return tEntityBaseList.stream().map(node -> map(node)).collect(Collectors.toList());
     }
     /**获取库下的所有的节点，以树形式返回*/
     public List<TEntityDto> findByStoreIdWithTree(TKey id){
-        List<TEntityBase> tEntityBaseList = repository.findAllByStoreId(id);
+        List<TEntityBase> tEntityBaseList = repository.findAllByStoreIdOrderBySortOrderAsc(id);
         List<TEntityBase> tree = buildTree(tEntityBaseList);
         return tree.stream().map(node -> map(node)).collect(Collectors.toList());
     }

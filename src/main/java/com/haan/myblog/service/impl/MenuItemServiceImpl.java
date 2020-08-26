@@ -37,6 +37,6 @@ public class MenuItemServiceImpl extends TreeAppService<MenuItemRepository, Menu
 
     @Override
     protected MenuItem referOtherAttributes(MenuItem entity, MenuItem other) {
-        return other;
+        return entity;
     }
 }

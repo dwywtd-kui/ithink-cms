@@ -12,4 +12,6 @@ import lombok.Data;
 public class MenuItemDto extends TreeEntityDto<MenuItemDto,Long> {
 
     private String name;
+
+    private Boolean open = true;
 }

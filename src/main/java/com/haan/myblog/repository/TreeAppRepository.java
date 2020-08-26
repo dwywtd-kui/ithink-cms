@@ -11,5 +11,5 @@ import java.util.List;
 public interface TreeAppRepository<T extends TreeEntityBase<T,ID>,ID> extends JpaRepository<T,ID> {
     List<T> findAllByParentId(ID parentId);
     void deleteByParentId(ID parentId);
-    List<T> findAllByStoreId(ID storeId);
+    List<T> findAllByStoreIdOrderBySortOrderAsc(ID storeId);
 }
