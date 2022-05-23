@@ -8,49 +8,68 @@
         <version>2.3.3.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
-    <groupId>com.haan</groupId>
-    <artifactId>myblog</artifactId>
+
+    <groupId>com.sunflower</groupId>
+    <artifactId>ithink-cms</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>myblog</name>
+    <name>ithink-cms</name>
     <description>Demo project for Spring Boot</description>
+
+    <packaging>pom</packaging>
 
     <properties>
         <java.version>1.8</java.version>
     </properties>
 
     <modules>
-        <module>ithink-cms</module>
-        <module>ithink-web-host</module>
+        <module>ithink-cms-web</module>
+        <module>ithink-cms-host</module>
+        <module>ithink-cms-comment</module>
     </modules>
 
     <dependencyManagement>
         <dependencies>
             <dependency>
-                <groupId>com.haan</groupId>
-                <artifactId>ithink-cms</artifactId>
+                <groupId>com.sunflower</groupId>
+                <artifactId>ithink-cms-web</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
             <dependency>
-                <groupId>com.haan</groupId>
-                <artifactId>ithink-web-host</artifactId>
+                <groupId>com.sunflower</groupId>
+                <artifactId>ithink-cms-host</artifactId>
                 <version>${project.version}</version>
             </dependency>
+
+            <dependency>
+                <groupId>com.sunflower</groupId>
+                <artifactId>ithink-cms-comment</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
     <dependencies>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-jpa</artifactId>
+            <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
 
 
         <dependency>
-            <groupId>org.postgresql</groupId>
-            <artifactId>postgresql</artifactId>
-            <scope>runtime</scope>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+
+        <!--<dependency>-->
+            <!--<groupId>org.postgresql</groupId>-->
+            <!--<artifactId>postgresql</artifactId>-->
+            <!--<scope>runtime</scope>-->
+        <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -74,16 +93,5 @@
         </dependency>
 
     </dependencies>
-
-
-
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
 
 </project>
