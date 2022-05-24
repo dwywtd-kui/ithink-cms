@@ -1,7 +1,7 @@
 package com.sunflower.ithink.cms.web.controller;
 
-import com.sunflower.ithink.cms.web.domin.dto.ArticleDto;
-import com.sunflower.ithink.cms.web.service.ArticleService;
+import com.ithink.cms.core.domin.dto.ArticleDto;
+import com.ithink.cms.core.service.ArticleService;
 import org.springframework.web.bind.annotation.*;
 
 /**

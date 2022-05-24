@@ -25,6 +25,7 @@
         <module>ithink-cms-web</module>
         <module>ithink-cms-host</module>
         <module>ithink-cms-comment</module>
+        <module>ithink-cms-core</module>
     </modules>
 
     <dependencyManagement>
@@ -57,19 +58,29 @@
             <artifactId>spring-boot-starter</artifactId>
         </dependency>
 
-
-
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-jpa</artifactId>
+        </dependency>
 
         <!--<dependency>-->
             <!--<groupId>org.postgresql</groupId>-->
             <!--<artifactId>postgresql</artifactId>-->
             <!--<scope>runtime</scope>-->
         <!--</dependency>-->
+
+        <!-- mysql -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.15</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>

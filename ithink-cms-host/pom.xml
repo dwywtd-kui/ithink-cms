@@ -12,6 +12,15 @@
 
     <artifactId>ithink-cms-host</artifactId>
 
+
+    <dependencies>
+        <dependency>
+            <groupId>com.sunflower</groupId>
+            <artifactId>ithink-cms-core</artifactId>
+        </dependency>
+    </dependencies>
+
+
     <build>
         <plugins>
             <plugin>
